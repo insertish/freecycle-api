@@ -33,9 +33,7 @@ const townData = await fetchPosts("BirminghamUK");
 // => { posts: { id: string, .. }, .. }
 
 // Example: find all the available offers
-const offersInBirmingham = townData.posts.filter(const offersInBirmingham = townData.posts.filter(
-  ({ type }) => type.const === "FC_POST_OFFER"
-);
+const offersInBirmingham = townData.posts.filter(
   ({ type }) => type.const === "FC_POST_OFFER"
 );
 ```
